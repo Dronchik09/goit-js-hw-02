@@ -12,7 +12,15 @@ function getShippingCost(country){
             return `Shipping to ${country} will cost ${deliveryAustralia} credits`;
         case "Jamaica":
             return `Shipping to ${country} will cost ${deliveryJamaica} credits`;
-        }
+        
+        default:
+            return "Sorry, there is no delivery to your country";
+    }
 
 }
-console.log(getShippingCost("Australia"));
+console.log(getShippingCost("Australia")); 
+console.log(getShippingCost("Germany")); 
+console.log(getShippingCost("China")); 
+console.log(getShippingCost("Chile")); 
+console.log(getShippingCost("Jamaica")); 
+console.log(getShippingCost("Sweden"));
