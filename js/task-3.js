@@ -4,10 +4,10 @@ const hasSpam = messageFill.includes("spam");
     const hasSale = messageFill.includes("sale");
     
     if(hasSpam || hasSale){
-        return "true";
+        return true;
     }
     else{
-        return "false";
+        return false;
     }
 }
 console.log(checkForSpam("Latest technology news"));
